@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>fizu.hu|Főoldal</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 sticky-top">
+  <a class="navbar-brand fizu" href="index.html">fizu.hu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active px-3">
+        <a class="nav-link" href="index.html">Főoldal
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="javascript.html">JavaScript</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="kedvenc-stat.html">Kedvenc statisztikáink</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="kerdoivek.html">Kérdőívek</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="rolunk.html">Rólunk</a>
+      </li>
+      <li class="nav-item dropdown mr-5 ml-3">
+        <a class="nav-link dropdown-toggle btn-group mr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Profil</a>
+        <div class="dropdown-menu  text-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="profilom.html">Profilom</a>
+          <a class="dropdown-item" href="terkep.html">Fizu-térkép</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Kijelentkezés</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid mb-0">
+  <div class="container">
+    <h1 class="">Mennyit keresnék, ha...?</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fugiat sequi, placeat dolor aliquid porro a quisquam ut,
+      accusantium quasi assumenda maiores ipsum vel.</p>
+    <a class="btn btn-green btn-lg mt-3" href="#" role="button">Tovább a kérdőívekre!</a>
+  </div>
+</div>
+
+<main>
+  <div class="container py-5">
+    <h2>1. Változók</h2>
+
+    <h3>1.1. Számok</h3>
+
+    <pre>
+    let valtozom = 123;
+    console.log( valtozom );
+    </pre>
+
+    <strong>Alap műveletek</strong>
+
+    <pre>
+    let a = 2000;
+    let b = 300;
+    console.log( a + b );
+    console.log( a - b );
+    console.log( a * b );
+    console.log( a / b );
+    </pre>
+
+    <h3>1.2. Szövegek</h3>
+
+    <pre>
+    let szoveg1 = 'alma';
+    let szoveg2 = 'körte';
+    console.log(szoveg1);
+    console.log(szoveg2);
+    </pre>
+
+    <strong>Összefűzés</strong>
+
+    <pre>
+    let szoveg1 = 'alma';
+    let szoveg2 = 'körte';
+    console.log(szoveg1 + szoveg2);
+    console.log(szoveg1 + ' ' + szoveg2);
+    </pre>
+
+    <h3>1.3. Igaz/hamis</h3>
+
+    <pre>
+    let logikaiValtozom = true;
+    console.log(logikaiValtozom);
+    </pre>
+
+    <strong>Negálás</strong>
+
+    <pre>
+    let logikaiValtozom = true;
+    console.log(logikaiValtozom);
+    console.log(!logikaiValtozom);
+    </pre>
+
+    <h2>2. Konstansok</h2>
+
+    <pre>
+    let valtozo = 10;
+    const konstans = 15;
+
+    valtozo = 20;
+    konstans = 25;
+    </pre>
+
+    <h2>3. Elágazások</h2>
+
+    <h3>3.1. if, else</h3>
+
+    <pre>
+    let feltetel = true;
+    if ( feltetel ) {
+      console.log('a feltétel igaz');
+    } else {
+      console.log('a feltétel hamis');
+    }
+    </pre>
+
+    <h3>3.2. if, else if, else</h3>
+
+    <pre>
+    let szerepkor = 'felhasznalo'; // lehetne még 'admin'
+    if ( szerepkor == 'admin' ) {
+      console.log('Üdvözöllek kedves admin!');
+    } else if (szerepkor == 'felhasznalo'){
+      console.log('Üdvözöllek kedves felhasználó!');
+    } else {
+      console.log('Üdvözöllek kedves idegen!');
+    }
+    </pre>
+
+    <h3>3.3. switch, case</h3>
+
+    <pre>
+    let szerepkor = 'vendeg'; // lehetne még 'admin', 'felhasznalo'
+    switch ( szerepkor ) {
+      case 'admin':
+        console.log('Üdvözöllek kedves admin!');
+
+      case 'felhasznalo':
+        console.log('Üdvözöllek kedves felhasználó!');
+      
+      case 'vendeg':
+        console.log('Üdvözöllek kedves vendég!');
+    }
+    </pre>
+
+    <pre>
+    let szerepkor = 'admin'; // lehetne még 'felhasznalo', 'vendeg'
+    switch ( szerepkor ) {
+      case 'admin':
+        console.log('Üdvözöllek kedves admin!')
+        break;
+
+      case 'felhasznalo':
+        console.log('Üdvözöllek kedves felhasználó!');
+        break;
+      
+      case 'vendeg':
+        console.log('Üdvözöllek kedves vendég!');
+        break;
+
+      default:
+        console.log('Üdvözöllek kedves idegen!');
+        break;
+    }
+    </pre>
+
+    <h2>4. Ciklusok</h2>
+
+    <h3>4.1. for</h3>
+
+    <pre>
+    let szoveg = 'alma körte labda';
+    let aSzamlalo = 0;
+    for ( let index = 0; index < szoveg.length; index++ ) {
+      if(szoveg.charAt(index) == 'a'){
+        aSzamlalo++;
+      }
+    }
+    console.log('aSzamlalo: ', aSzamlalo);
+    </pre>
+
+    <h3>4.2. while</h3>
+
+    <pre>
+    let szoveg = 'alma körte labda';
+    let aSzamlalo = 0;
+    let index = 0;
+    while ( index < szoveg.length ) {
+      
+      if(szoveg.charAt(index) == 'a'){
+        aSzamlalo++;
+      }
+      
+      index++;
+    }
+    console.log('aSzamlalo: ', aSzamlalo);
+    </pre>
+
+
+    <h2>5. Függvények</h2>
+
+    <h3>5.1. visszatérési értékkel rendelkező függvény</h3>
+
+    <pre>
+    function Osszeadas(egyikSzam, masikSzam){
+      return egyikSzam + masikSzam;
+    }
+
+    let a = 4;
+    let b = 7;
+    console.log( 'Osszeadas(' + a + ', ' + b +') = ', Osszeadas(a, b));
+    </pre>
+
+    <h3>5.2. visszatérési értékkel nem rendelkező függvény</h3>
+
+    <pre>
+    function alertFeldobasEsConsoleLog(szoveg){
+      if(typeof szoveg == 'undefined' || szoveg.length == 0){
+        return;
+      }
+
+      alert(szoveg);
+      console.log(szoveg);
+    }
+
+    alertFeldobasEsConsoleLog('Hello World!');
+    </pre>
+
+  </div>
+</main>
+
+<footer class="pt-5 text-light bg-dark">
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-12 col-lg-4 my-auto text-center">
+        <a class="fizu" href="index.html">fizu.hu</a>
+      </div>
+      <div class="col-12 col-lg-4">
+        <ul class="list-unstyled text-center">
+          <li class="py-2">
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Hírlevél-feliratkozás</a>
+          </li>
+          <li class="py-2">
+            <a href="index.html">Főoldal</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="javascript.html">JavaScript</a>
+          </li>
+          <li class="py-2">
+            <a href="kedvenc_stat.html">Kedvenc statisztikáink</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-4">
+        <ul class="list-unstyled text-center">
+          <li class="py-2">
+            <a href="kerdoivek.html">Kérdőív</a>
+          </li>
+          <li class="py-2">
+            <a href="rolunk.html">Rólunk</a>
+          </li>
+          <li class="py-2">
+            <a href="terkep.html">Fizu-térkép</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <h1 class="line">BARÁTKOZZUNK</h1>
+    <div class="text-center">
+      <a class="px-2" href="https://facebook.com">
+        <img src="img/facebook.svg" alt="facebook" height="40">
+      </a>
+      <a class="px-2" href="https://twitter.com">
+        <img src="img/google.svg" alt="google" height="50">
+      </a>
+      <a class="px-2" href="https://instagram.com">
+        <img src="img/twitter.svg" alt="twitter" height="40">
+        </i>
+      </a>
+      <a class="px-2" href="https://pinterest.com">
+        <img src="img/viber.svg" alt="viber" height="40">
+        </i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row pt-4">
+      <div class="col-12 text-center">
+        <p>fizu.hu 2018-</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+  crossorigin="anonymous"></script>
+</body>
+
+<!-- scripts.js -->
+<script src="scripts.js"></script>
+
+
+</html>
